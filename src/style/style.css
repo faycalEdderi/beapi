@@ -229,7 +229,6 @@
 .footer{
     margin-top: 50px;
     width: 100%;
-    height: 250px;
     background-color: rgb(255, 249, 249);
 }
 .footer-body{
@@ -414,23 +413,21 @@ justify-content: center;
 
 .slider-left-content p {
     margin-top: 20px;
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .slider-buttons{
 display: flex;
 flex-direction: column;
 
-  margin-top: 20px;
-  margin-bottom: 20px;
+margin-top: 20px;
+margin-bottom: 20px;
 
     
 }
 .slider-buttons > a{
     margin-bottom: 15px;
-    
-        
-    }
+}
 
 .slider-arrow{
     width: 100%;
