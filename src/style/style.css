@@ -223,6 +223,7 @@
 
 /*******End slideshow*******/
 
+/******Start footer ******/
 #footer{
     margin-top: 50px;
     width: 100%;
@@ -293,7 +294,7 @@
     padding: 5px;
 
 }
-
+/*****End footer*******/
 
 
 
@@ -372,6 +373,29 @@
         margin-top: 20px;
         margin-bottom: 20px;
     }
+
+
+    /****footer*****/
+    
+.footer-body{
+    flex-direction: column;
+}
+
+#footer-logo{
+justify-content: center;
+}
+#footer div{
+    width: 100%;
+
+}
+#footer li, #footer h3{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+
+}
    
   }
 
