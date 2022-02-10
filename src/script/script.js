@@ -15,5 +15,30 @@ jQuery(document).ready(function($) {
         $('#buttons').fadeToggle();
     });
     // Fin menu hamburger animation
+
+    /*************** Slideshow ******************/
+
+    $('.next').click(function(){
+        let activeSlide = $('.active');
+        let nextSlide = activeSlide.next();
+
+        if(nextSlide.length){
+            activeSlide.removeClass('active').css('z-index, -10');
+            nextSlide.addClass('active').css('z-index', 10);
+        }
+
+    });
+    $('.prev').click(function(){
+        let activeSlide = $('.active');
+        let prevSlide = activeSlide.prev();
+
+        if(prevSlide.length){
+            activeSlide.removeClass('active').css('z-index, -10');
+            prevSlide.addClass('active').css('z-index', 10);
+        }
+
+    });
        
  });
+
+
