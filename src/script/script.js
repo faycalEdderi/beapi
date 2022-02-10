@@ -1,5 +1,6 @@
 jQuery(document).ready(function($) {
     // Menu hamburger animation
+    
     $(window).resize(function(){
         if (window.matchMedia("(min-width: 720px)").matches) {
             $('#menu').show();

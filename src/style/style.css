@@ -111,34 +111,34 @@
   .singin:hover, .singup:hover{
     box-shadow: 5px 5px 5px #CDF3F1;    
 }
-#firstContent{
+.firstContent{
     width: 80%;
 }
-#cards{
+.cards{
     margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-#cards> div{
+.cards> div{
     width: 20%;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-#cards>div>p, #cards>div>h3 {
+.cards>div>p, .cards>div>h3 {
     
     margin-top: 20px;
 }
 
-#cards>div>h3{
+.cards>div>h3{
     font-family: 'BeApiFont2', Arial, sans-serif;
 }
 
-#cards>div>img{
+.cards>div>img{
     border-radius: 10px;
 }
 
-#firstContent>h2{
+.firstContent>h2{
     margin-top: 20px;
     font-family: 'BeApiFont2', Arial, sans-serif;
     font-size:xx-large;
@@ -146,7 +146,7 @@
 
 }
 
-#firstContent>input{
+.firstContent>input{
    
     display: block;
     margin : 0 auto;
@@ -162,6 +162,8 @@
 
 .slider-body{
     width: 80%;
+    background-color: white;
+
     position: relative;
     overflow: hidden;
     float: left;
@@ -224,7 +226,7 @@
 /*******End slideshow*******/
 
 /******Start footer ******/
-#footer{
+.footer{
     margin-top: 50px;
     width: 100%;
     height: 250px;
@@ -239,7 +241,7 @@
     margin-bottom: 20px;
 }
 
-#footer-logo{
+.footer-logo{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -247,7 +249,7 @@
     font-weight: bold;
     font-size: 30px;
 }
-#footer-logo p{
+.footer-logo p{
     margin-top: 15px;
 }
 
@@ -297,13 +299,6 @@
 /*****End footer*******/
 
 
-
-
-
-
-
-
-
 /**** Responsive ****/
 @media screen and (max-width: 720px) {
     #hamburgerMenu{
@@ -328,12 +323,14 @@
     }
     #menuBar{
         width: 100%;
-        position: -webkit-sticky;
-        position: sticky;
+        /*position: -webkit-sticky;
+        position: sticky;*/
         top: 0;
         background-color: white;
     }
-    #firstContent{
+
+    
+    .firstContent{
         width: 100%;
     }
     #menuLeft{
@@ -363,12 +360,14 @@
         margin-top: 25px;
 
     }
-    #cards{
+    .cards{
+        width: 100%;
         margin-top: 30px;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
-    #cards> div{
+    .cards> div{
         width: 100%;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -381,14 +380,14 @@
     flex-direction: column;
 }
 
-#footer-logo{
+.footer-logo{
 justify-content: center;
 }
-#footer div{
+.footer div{
     width: 100%;
 
 }
-#footer li, #footer h3{
+.footer li, .footer h3{
     width: 100%;
     text-align: center;
     margin-top: 20px;
@@ -396,6 +395,41 @@ justify-content: center;
 
 
 }
+.footer-newsletter{
+    margin-bottom: 100px;
+}
+
+
+/******Slideshow******/
+.slider-block{
+    flex-direction: column;
+}
+
+.slider-left-content{
+    width: 100%;
+}
+.slider-img{
+    width: 100%;
+}
+
+.slider-left-content p {
+    margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.slider-buttons{
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+    
+}
+
+.slider-arrow{
+    width: 100%;
+    text-align: center;
+}
+
    
   }
 
