@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="src/script/script.js"></script>
     <link rel="stylesheet" href="src/style/style.css">
 
@@ -12,7 +13,7 @@
 </head>
 <body>
     <div id="main">
-        <div id="submain">
+        <div id="menuBar">
             <header id="header">
                 <div id="menuLeft">
                     <div id="identity">
@@ -21,6 +22,9 @@
                     </div>
                 </div>
                 <div id="menuRight">
+                        <div id="hamburgerMenu">
+                            <img  id="hamburger"  src="src/img/hamburger.png" alt="">
+                        </div>
                     
 
                         <ul id="menu" >
@@ -32,16 +36,40 @@
                     
                 
                         <div id="buttons" >
-                            <input id="signin" type="button" value="Sign In">
-                            <input id="sigup" type="button" value="Sing up">
+                            <input class="singin" type="button" value="Sign In">
+                            <input class="singup"  type="button" value="Sing up">
                         </div>
                     
                 </div>
-
-                
-
-               
             </header>
+        </div>
+        <div id="firstContent">
+            <h2>We design tools to unveil your powers</h2>
+            <div id="cards">
+                <div>
+                    <img  class="cardImg"  src="src/img/logo.png" alt="">
+                    <h3>First click tests</h3>
+                    <p>While most people enjoy casino gambling</p>
+                </div>
+                <div>
+                    <img  class="cardImg" src="src/img/logo.png" alt="">
+                    <h3>Design surveys</h3>
+                    <p>Sports betting lottery and bingo playing for the fun</p>
+                </div>
+                <div>
+                    
+                    <img  class="cardImg" src="src/img/logo.png" alt="">
+                    <h3>Preference tests</h3>
+                    <p>The Myspace page defines the individual</p>
+                </div>
+                <div>
+                    <img  class="cardImg" src="src/img/logo.png" alt="">
+                    <h3>Five second test</h3>
+                    <p>Personnal choices and the overal personality of the person</p>
+                </div>
+            </div>
+            <input class="singup" type="button" value="Sign Up Now">
+
 
         </div>
     </div>

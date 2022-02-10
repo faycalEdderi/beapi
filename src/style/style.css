@@ -6,18 +6,29 @@
 @font-face {
     font-family: "BeApiFont1";
     src: url("src/font/FontAwesome.otf") format("otf"),
-   }
-   @font-face {
+}
+@font-face {
     font-family: "BeApiFont2";
     src: url("src/font/FontAwesome.otf") format("otf"),
-   }
+}
+
+#main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#hamburger{
+    display:none;
+    width: 50px;
+    height: 50px;
+}
    
 #menuRight, #menuLeft{
     font-family: 'BeApiFont1', Arial, sans-serif;
     font-style:normal;
 }
-
-
 
 #header{
     display: flex;
@@ -74,7 +85,7 @@
     align-items: center;
 }
 
-#buttons > input{
+.singup, .singin{
     font-size: 20px;
     padding: 6px 12px;
     margin-bottom: 0;
@@ -88,15 +99,128 @@
     
 }
 
-#buttons> input:first-child {
+.singin {
     color: black;
     background-color: white;
   }
-  #buttons> input:last-child {
+  .singup{
     color: white;
     background-color: orangered;
   }
 
-  #buttons> input:hover{
+  .singin:hover, .singup:hover{
     box-shadow: 5px 5px 5px #CDF3F1;    
 }
+#firstContent{
+    width: 80%;
+}
+#cards{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#cards> div{
+    width: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#cards>div>p, #cards>div>h3 {
+    
+    margin-top: 20px;
+}
+
+#cards>div>h3{
+    font-family: 'BeApiFont2', Arial, sans-serif;
+}
+
+#cards>div>img{
+    border-radius: 10px;
+}
+
+#firstContent>h2{
+    margin-top: 20px;
+    font-family: 'BeApiFont2', Arial, sans-serif;
+    font-size:xx-large;
+    text-align: center;
+
+}
+
+#firstContent>input{
+   
+    display: block;
+    margin : 0 auto;
+    margin-top: 30px;
+}
+
+/**** Responsive ****/
+@media screen and (max-width: 720px) {
+    #hamburgerMenu{
+        width: 100%;
+    }
+    #hamburger{
+        display:block;
+        
+    }
+    #hamburger:hover{
+        cursor: pointer;
+        
+    }
+    #main{
+        align-items: baseline;
+    }
+
+    #header{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    #menuBar{
+        width: 100%;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        background-color: white;
+    }
+    #firstContent{
+        width: 100%;
+    }
+    #menuLeft{
+      
+        width: 100%;
+        
+    }
+    #menuRight{
+      
+        width: 100%;
+        flex-direction: column;
+    }
+    #menu{
+        width: 100%;
+        margin-top: 25px;
+        flex-direction: column;
+        font-size: 1.5em;
+
+    }
+    #menu>li{
+        margin-bottom: 20px;
+
+
+    }
+    #buttons{
+        width: 100%;
+        margin-top: 25px;
+
+    }
+    #cards{
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+    #cards> div{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+   
+  }
